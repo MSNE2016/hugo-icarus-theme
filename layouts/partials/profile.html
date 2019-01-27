@@ -31,6 +31,16 @@
         </span>
       </div>
     </div>
+    <div class="base-info profile-block">
+      <h2 id="title">External Links</h2>
+      <p>
+      <ul align="center">
+          {{ range .Site.Params.side }}
+          <li><a href="{{ .link | absURL }}" target="_blank" title="JC">{{ .label }}</i></a></li>
+          {{ end }}
+      </ul>
+       </p>
+    </div>
     <div class="profile-block social-links">
       <table>
         <tr>
