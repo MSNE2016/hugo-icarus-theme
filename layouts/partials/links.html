@@ -1,0 +1,29 @@
+<div class="linklist">
+    {{ with .web }}
+    <a href="{{.}}" target="_blank" title="Website"><i class="fa fa-link"></i></a>
+    {{ end }}
+
+    {{ with .email }}
+    <a href="{{.}}" target="_blank" title="E-Mail"><i class="fa fa-envelope"></i></a>
+    {{ end }}
+
+    {{ with .github }}
+    <a href="{{.}}" target="_blank" title="GitHub"><i class="fa fa-github"></i></a>
+    {{ end }}
+
+    {{ with .medium}}
+    <a href="{{.}}" target="_blank" title="Medium"><i class="fa fa-medium"></i></a>
+    {{ end }}
+
+    {{ with .linkedin }}
+    <a href="{{.}}" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+    {{ end }}
+
+    {{ with .facebook }}
+    <a href="{{.}}" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+    {{ end }}
+
+    {{ with .twitter }}
+    <a href="{{.}}" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a>
+    {{ end }}
+</div>

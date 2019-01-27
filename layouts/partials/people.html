@@ -15,7 +15,7 @@
                 <div class="image-cropper">
                     <img src="{{ .image | absURL }}" >
                 </div>
-                <p class="card-title"><b>{{ .name }}</b></p>
+                <p class="card-title"><b><a href={{ .page | absURL }}>{{ .name }}</a></b></p>
                 <p class="card-text">
                 {{ .description }}
                 </p>
